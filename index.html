@@ -10,17 +10,29 @@
 <body>
     <div class="topnav">
         <input type="text" placeholder="Ansattnummer..">
-        <a class="active" href="#inloggingsproblemer">Inloggingsproblemer</a>
+        <a class="active" href="#innloggingsproblemer">Inloggingsproblemer</a>
 
-    </div>
-    <div>
-        <input type="text" placeholder="Passord..">
-        <a class="active" href="#glemtPassord">Glemt passord</a>
+        <div class="botnav">
+            <input type="text" placeholder="Passord..">
+            <a class="active" href="#glemtPassord">Glemt passord</a>
+        </div>
     </div>
 </body>
 
 <style>
-
+    .topnav {
+        position: absolute;
+        bottom: 50%;
+        left: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+        text-align: center;
+    }
+    
+    .botnav {
+        position: absolute;
+    }
 </style>
 
 </html>
