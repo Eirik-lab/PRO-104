@@ -142,13 +142,13 @@
 
 <body>
     <div class="title-txt">
-        <h2>Gylne Pizza Administrasjonsside</h2>
+        <h2>Gyldne Pizza Administrasjonsside</h2>
 
         <button class="title-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
     </div>
     <div id="id01" class="modal">
 
-        <form class="modal-content animate" action="/action_page.php" method="post">
+        <form class="modal-content animate" action="mainMenu.html">
             <div class="imgcontainer">
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                 <img src="images/icons8-salami_pizza.png" class="Logo">
@@ -161,7 +161,7 @@
                 <label for="psw"><b>Passord</b></label>
                 <input type="password" placeholder="Skriv inn Passord" name="psw" required>
 
-                <button id="checkInputBtn" href="mainMenu.html"><input type="submit"/> </button>
+                <button id="checkInputBtn" type="submit" onclick="myFunction">Login</button>
                 <label>
         <input type="checkbox" checked="checked" name="remember"> Husk meg
       </label>
@@ -186,6 +186,10 @@
         }
 
 
+        function myFunction() {
+            window.location.href = "mainMenu.html";
+        }
+
 
         function checkUnameAndPsw() {
             unameInput = uname.value;
@@ -196,7 +200,7 @@
                 window.location.replace("vg.no")
 
             } else {
-                window.location.replace("vg.no")
+                window.location.replace("mainMenu.html")
             }
 
         }
