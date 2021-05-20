@@ -161,7 +161,7 @@
                 <label for="psw"><b>Passord</b></label>
                 <input type="password" placeholder="Skriv inn Passord" name="psw" required>
 
-                <button type="submit">Login</button>
+                <button id="checkInputBtn" href="mainMenu.html"><input type="submit"/> </button>
                 <label>
         <input type="checkbox" checked="checked" name="remember"> Husk meg
       </label>
@@ -176,12 +176,31 @@
 
     <script>
         var modal = document.getElementById('id01');
+        var passord1 = 1234;
+        var username1 = 4233;
 
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
+
+
+
+        function checkUnameAndPsw() {
+            unameInput = uname.value;
+            pswInput = psw.value;
+
+            if (unameInput === uname && pswInput === psw) {
+
+                window.location.replace("vg.no")
+
+            } else {
+                window.location.replace("vg.no")
+            }
+
+        }
+        checkInputBtn.onclick = checkUnameAndPsw;
     </script>
 
 </body>
