@@ -4,6 +4,8 @@
     <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="pizzameny.css">
+
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,23 +14,84 @@
     </head>
     <body>
 
+<section id="menu-list" class="section-padding">
+    <div class="container">
+        <div class="row">
+                <div class = "header">
+                    <h1>Den Gyldne Meny</h1>
 
-<div>
-<div class = "header">
-    <h1>Den Gyldne Meny</h1>
-</div>
-
-
+                </div>
+  <div class ="den-gyldne-pizza-meny" id= "menu-list">
 <ul>
-    <li>Hawaiian 149,-</li>
-    <li>Spicy Chicken 189,-</li>
-    <li>Manhatten 179,-</li>
-    <li>Tacopizza 159,-</li>
-    <li>Kebabpizza 159,-</li>
-  </ul>
-
-
+    <li><a class="filter" data-filter=".pizzameny">Pizzameny</a></li>
+     <li><a class="filter" data-filter=".drinkmeny">Drikke</a></li>
 </div>
+
+<div class="menu-wrapper">
+
+   <div class="pizzameny-resturant">
+       <span class="clearfix">
+        <a href="#" class="menu-title" data-meal-img="">Hawaiian</a>
+       </span style="left: 166px; right:44px;" class="menu-line"></span>
+       <span class="menu-price">149,-</span>
+    </span>  
+    <span class="menu-subtitle"><br>Tomatsaus, ost, ananas og skinke</span>
+    </div>
+
+    <div class="pizzameny-resturant">
+        <span class="clearfix">
+         <a href="#" class="menu-title" data-meal-img="">Spicy Chicken</a>
+        </span style="left: 166px; right:44px;" class="menu-line"></span>
+        <span class="menu-price">189,-</span>
+     </span>  
+     <span class="menu-subtitle"></span>
+     </div>
+     <div class="pizzameny-resturant">
+        <span class="clearfix">
+         <a href="#" class="menu-title" data-meal-img="">Manhatten</a>
+        </span style="left: 166px; right:44px;" class="menu-line"></span>
+        <span class="menu-price">179,-</span>
+     </span>  
+     <span class="menu-subtitle"></span>
+     </div>
+     <div class="pizzameny-resturant">
+        <span class="clearfix">
+         <a href="#" class="menu-title" data-meal-img="">Tacopizza</a>
+        </span style="left: 166px; right:44px;" class="menu-line"></span>
+        <span class="menu-price">159,-</span>
+     </span>  
+     <span class="menu-subtitle"></span>
+     </div>
+     <div class="pizzameny-resturant">
+        <span class="clearfix">
+         <a href="#" class="menu-title" data-meal-img="">Kebabpizza</a>
+        </span style="left: 166px; right:44px;" class="menu-line"></span>
+        <span class="menu-price">159,-</span>
+     </span>  
+     <span class="menu-subtitle"></span>
+     </div>
+
+
+
+
+
+    <!----->
+    <div class="drinkmeny-resturant">
+        <span class="clearfix">
+         <a href="#" class="menu-title" data-meal-img="">Fanta</a>
+        </span style="left: 166px; right:44px;" class="menu-line"></span>
+        <span class="menu-price">39,-</span>
+     </span>  
+     <span class="menu-subtitle"></span>
+     </div>
+
+
+
+        </div>
+    </div>
+</section>
+
+
 
 
     </body>
