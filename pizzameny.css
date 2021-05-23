@@ -90,3 +90,44 @@ float:left;
     position: relative;
     display: block;
 }
+
+
+
+
+
+
+.drinkmeny-resturant{
+    width: 50%;
+    float:left;
+    padding: 15px;
+    position: relative;
+}
+
+.drinkmeny-resturant .menu-title{
+float:left;
+    font-family: Monserrat, arial;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    color: #ff5821;
+}
+
+.drinkmeny-resturant .menu-line{
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0,0,0,.3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+
+.drinkmeny-resturant .menu-price{
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.drinkmeny-resturant span.clearfix{
+    position: relative;
+    display: block;
+}
+
