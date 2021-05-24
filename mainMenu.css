@@ -2,6 +2,8 @@
     height: 70px;
 }
 
+
+/*
 #navbar-child-1{
     opacity: 90%;
     font-size: 13px;
@@ -25,47 +27,58 @@
     font-size: 13px;
     left: 7%;
 }
+*/
 
 .columns {
     width: 140%;
     height: 100%;
     margin-left: 0;
-  }
-  .card {
+}
+
+.card {
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
     margin-bottom: 2rem;
     width: 72%;
-  }
-  #card-2 { 
-    right: 28%;
-  }
+}
 
-  .card-header-title {
+#card-2 {
+    right: 28%;
+}
+
+.card-header-title {
     color: #8F99A3;
     font-weight: 400;
-  }
-  .info-tiles {
+}
+
+.info-tiles {
     margin: 1rem 0;
-  }
-  .info-tiles .subtitle {
+}
+
+.info-tiles .subtitle {
     font-weight: 300;
     color: #8F99A3;
-  }
-  .hero.welcome.is-info {
+}
+
+.hero.welcome.is-info {
     background: #3bdc36;
     background: -webkit-linear-gradient(to right, #000000, #ffffff);
     background: linear-gradient(to right, #000000, #ffffff);
-  }
-  .hero.welcome .title, .hero.welcome .subtitle {
+}
+
+.hero.welcome .title,
+.hero.welcome .subtitle {
     color: hsl(192, 17%, 99%);
-  }
-  .card .content {
+}
+
+.card .content {
     font-size: 14px;
-  }
-  .card-table .table {
+}
+
+.card-table .table {
     margin-bottom: 0;
-  }
-  .events-card .card-table {
+}
+
+.events-card .card-table {
     max-height: 400px;
     overflow-y: scroll;
-  }
+}
