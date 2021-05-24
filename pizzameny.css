@@ -35,7 +35,7 @@ float:left;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #ff5821;
+    color:#FFB03B;
 }
 .pizzameny-resturant .menu-line{
     position: absolute;
@@ -67,7 +67,6 @@ float:left;
 
 
 
-
 .drinkmeny-resturant{
     width: 50%;
     float:left;
@@ -80,7 +79,7 @@ float:left;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #ff5821;
+    color: #FFB03B;
 }
 
 .drinkmeny-resturant .menu-line{
@@ -103,3 +102,42 @@ float:left;
     display: block;
 }
 
+
+
+
+
+
+.extras-resturant{
+    width: 50%;
+    float:left;
+    padding: 15px;
+    position: relative;
+}
+
+.extras-resturant .menu-title{
+float:left;
+    font-family: Monserrat, arial;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    color: #FFB03B;
+}
+
+.extras-resturant .menu-line{
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0,0,0,.3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+
+.extras-resturant .menu-price{
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.extras-resturant span.clearfix{
+    position: relative;
+    display: block;
+}
