@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Accounting</title>
+</head>
+<body>
+
+
+    <!--START NAVBAR-->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="mainMenu.html">
+            <img src="images/icons8-salami_pizza.png" width="112" height="28">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbar" class="navbar-menu">
+          <div class="navbar-start">
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                  Mer
+                </a>
+        
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="employees.html">
+                    Ansatte 
+                  </a>
+
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="restaurants.html">
+                    Restauranter
+                  </a>
+                  <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
+                    Oslo
+                  </a>
+                  <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
+                    Bergen
+                  </a>
+                  <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
+                    Moss
+                  </a>
+                  <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
+                    Hadeland
+                  </a>
+
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="pizzameny.html">
+                    Pizzameny
+                  </a>
+
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="accounting.html">
+                    Regnskap
+                  </a>
+                </div>
+            </div>
+      
+            
+          </div>
+      
+          <div class="navbar-end">
+            <a class="navbar-item" href="employees.html">
+                Ansatte
+              </a>
+  
+              <a class="navbar-item" href="restaurants.html">
+                  Restauranter
+                </a>
+  
+                <a class="navbar-item" href="pizzameny.html">
+                  Pizzameny
+                </a>
+  
+                <a class="navbar-item" href="accounting.html">
+                  Regnskap
+                </a>
+            
+          </div>
+        </div>
+      </nav>
+
+        <!--END NAVBAR-->
+
+    <div class="container">
+
+        <main>
+
+            <section class="columns">
+
+                <article class="column">
+                    <div class="has-background-grey-lighter p-3">
+                        <h2>Salg</h2>
+                    </div>
+                </article>
+
+                <article class="column">
+                    <div class="has-background-grey-lighter p-3">
+                        <h3>Lønn</h3>
+
+                    </div>
+                    
+                </article>
+
+                <article class="column">
+                    <div class="has-background-grey-lighter p-3">
+                        <h3>Kostnader</h3>
+                    </div>
+                </article>
+
+                <article class="column">
+                    <div class="has-background-grey-lighter p-3">
+                        <h3>Fortjeneste</h3>
+                    </div>
+                </article>
+
+            </section> <!-- Første raden -->
+
+           
+            <div class="columns">
+                <div class="column is-6">
+                    <div class="card events-card">
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Velg avdeling
+                            </p>
+                        </header>
+                        <div class="card-table">
+                            <div class="content">
+                                <table class="table is-fullwidth is-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                            <td>Moss</td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="#">Velg</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                            <td>Oslo</td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="#">Velg</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                            <td>Bergen</td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="#">Velg</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td width="5%"><i class="fa fa-bell-o"></i></td>
+                                            <td>Hadeland</td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="#">Velg</a></td>
+                                        </tr>
+                                       
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </main>
+
+
+
+    </div>
+
+        
+
+
+
+
+    
+</body>
+</html>
