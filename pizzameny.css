@@ -16,12 +16,38 @@ body{
     35px;
 }
 
-.header-h{
+.header-1{
     font-size: 35px;
     color: #04AA6D;
     font-family:'Satisfy', sans-serif;
     font-weight: 300;
 }
+
+.header-2{
+    font-size: 20px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+}
+
+
+.header-3{
+    font-size: 20px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+}
+
+.header-4{
+    font-size: 20px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+}
+
 
 .pizzameny-resturant{
     width: 50%;
