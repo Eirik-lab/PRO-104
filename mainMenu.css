@@ -52,7 +52,7 @@
     color: #8F99A3;
   }
   .hero.welcome.is-info {
-    background: #3bdc36;
+    background: #000000;
     background: -webkit-linear-gradient(to right, #000000, #ffffff);
     background: linear-gradient(to right, #000000, #ffffff);
   }
@@ -68,4 +68,8 @@
   .events-card .card-table {
     max-height: 400px;
     overflow-y: scroll;
+  }
+
+  .button {
+    background-color: aqua;
   }

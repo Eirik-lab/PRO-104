@@ -21,6 +21,10 @@
   float: center; /* knapper ved siden av hverandre */
 }
 
+.link {
+  color: white;
+  text-decoration: none;
+}
 
 /* Clear floats */
 .btn-group:after {
