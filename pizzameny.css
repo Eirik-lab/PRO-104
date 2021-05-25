@@ -10,6 +10,7 @@ body{
 .section-padding{
     padding:60px 0px;
 }
+ 
 
 .gyldne-meny{
     margin-bottom:
@@ -49,19 +50,21 @@ body{
 }
 
 
+
+
 .pizzameny-resturant{
-    width: 50%;
-    float:left;
+    width: 70%;
+    float:top left;
     padding: 15px;
     position: relative;
 }
 
 .pizzameny-resturant .menu-title{
-float:left;
+float:top left;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color:#FFB03B;
+    color:#e6952c;
 }
 .pizzameny-resturant .menu-line{
     position: absolute;
@@ -80,7 +83,7 @@ float:left;
 
 .pizzameny-resturant .menu-subtitle{
     display: block;
-    float: left;
+    float: top left;
     color: #B1B1B1;
     font-size: 1.2rem;
 }
@@ -94,18 +97,18 @@ float:left;
 
 
 .drinkmeny-resturant{
-    width: 50%;
-    float:left;
+    width: 70%;
+    float:left middle;
     padding: 15px;
     position: relative;
 }
 
 .drinkmeny-resturant .menu-title{
-float:left;
+float:left middle;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #FFB03B;
+    color: #e6952c;
 }
 
 .drinkmeny-resturant .menu-line{
@@ -129,19 +132,21 @@ float:left;
 }
 
 
+
+
 .extras-resturant{
-    width: 50%;
-    float:left;
+    width: 70%;
+    float:left bottom;
     padding: 15px;
     position: relative;
 }
 
 .extras-resturant .menu-title{
-float:left;
+float:left bottom;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #FFB03B;
+    color: #e6952c;
 }
 
 .extras-resturant .menu-line{
