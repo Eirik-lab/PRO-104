@@ -10,8 +10,9 @@
         
         .title-txt {
             position: absolute;
-            top: 40%;
-            left: 40%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
         
         input[type=text],
@@ -130,7 +131,7 @@
         
         .title-btn {
             position: relative;
-            left: 40%;
+            left: 50%;
         }
     </style>
 </head>
@@ -156,7 +157,9 @@
                 <label for="psw"><b>Passord</b></label>
                 <input type="password" placeholder="Skriv inn Passord" name="psw" required>
 
-                <button id="checkInputBtn" type="submit" onclick="myFunction">Login</button>
+                <!--<button id="checkInputBtn" type="submit" onclick="myFunction">Login</button>-->
+                <button id="checkInputBtn" onclick="checkInput">Login</button>
+
                 <label>
         <input type="checkbox" checked="checked" name="remember"> Husk meg
       </label>
@@ -170,37 +173,50 @@
     </div>
 
     <script>
-        var modal = document.getElementById('id01');
-        var passord1 = 1234;
-        var username1 = 4233;
-
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-
-
-        function myFunction() {
-            window.location.href = "mainMenu.html";
-        }
-
-
-        function checkUnameAndPsw() {
-            unameInput = uname.value;
-            pswInput = psw.value;
-
-            if (unameInput === uname && pswInput === psw) {
-
-                window.location.replace("vg.no")
-
-            } else {
-                window.location.replace("mainMenu.html")
-            }
-
-        }
-        checkInputBtn.onclick = checkUnameAndPsw;
-    </script>
+	
+		/*
+			HTML objects
+		*/
+		var password1Txt = document.getElementById("psw");
+		var password2Txt = document.getElementById("password2-txt");
+		
+		var checkInputBtn = document.getElementById("check-input-btn");
+		var outputDiv = document.getElementById("output-div");
+		
+		/*
+			Variables
+		*/
+		var psw = "123";
+		var password2 = "456";
+		
+		var passwordUser1 = "";
+		var passwordUser2 = "";
+		
+		/*
+			Functions
+		*/
+		function checkInput(){
+			
+			passwordUser1 = psw.value;
+			passwordUser2 = password2Txt.value;
+			
+			if( passwordUser1 === psw){
+				outputDiv.innerHTML = `
+					<h3>Gratulerer! Dere er rike!</h3>
+					<img src="images/treasure-hunters.jpg">
+				`;
+			}else{
+				outputDiv.innerHTML = "Dere tastet inn feil kode og hvelvet vil være låst for evig tid!";
+			}
+		}
+		
+		/*
+			Events
+		*/
+		checkInputBtn.onclick = checkInput;
+		
+		
+	</script>
 
 </body>
 
