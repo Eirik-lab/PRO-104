@@ -11,43 +11,43 @@ body{
     padding:60px 0px;
 }
 
-.marb-35{
+.gyldne-meny{
     margin-bottom:
     35px;
 }
 
-.header-h{
+.header-1{
     font-size: 35px;
-    color: #FFB03B;
+    color: #04AA6D;
     font-family:'Satisfy', sans-serif;
     font-weight: 300;
 }
 
-#menu-list ul li{
-    display: inline-block;
-    color:#fff;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    margin-bottom: 40px;;
+.header-2{
+    font-size: 20px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
 }
 
-#menu-list ul li a{
-    padding: 10px 20px;
-    font-size: 14px;
-    color: #565656;
-    border-radius: 0px;
-    border:1px solid #BBBBBB;
-    text-decoration: none;
-    cursor:pointer;
+
+.header-3{
+    font-size: 20px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
 }
 
-#menu-list ul li a.active, #menu-list ul li a:hover {
-    background: #FFB03B;
-    color: #fff;
-    border: 1px solid
-    #FFB03B;
-
+.header-4{
+    font-size: 20px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
 }
+
 
 .pizzameny-resturant{
     width: 50%;
@@ -61,9 +61,8 @@ float:left;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #ff5821;
+    color:#FFB03B;
 }
-
 .pizzameny-resturant .menu-line{
     position: absolute;
     bottom: 6px;
@@ -94,8 +93,6 @@ float:left;
 
 
 
-
-
 .drinkmeny-resturant{
     width: 50%;
     float:left;
@@ -108,7 +105,7 @@ float:left;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #ff5821;
+    color: #FFB03B;
 }
 
 .drinkmeny-resturant .menu-line{
@@ -131,3 +128,38 @@ float:left;
     display: block;
 }
 
+
+.extras-resturant{
+    width: 50%;
+    float:left;
+    padding: 15px;
+    position: relative;
+}
+
+.extras-resturant .menu-title{
+float:left;
+    font-family: Monserrat, arial;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+    color: #FFB03B;
+}
+
+.extras-resturant .menu-line{
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0,0,0,.3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+}
+
+.extras-resturant .menu-price{
+    font-weight: 600;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.extras-resturant span.clearfix{
+    position: relative;
+    display: block;
+}
