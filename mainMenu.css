@@ -26,6 +26,14 @@
     left: 7%;
 }
 
+#logg-ut-btn {
+  background-color: #f44336;
+}
+
+.button is-small is-primary {
+  background-color: #04AA6D;
+}
+
 .columns {
     width: 140%;
     height: 100%;
