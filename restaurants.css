@@ -11,12 +11,12 @@
 
 .btn-group button {
   background-color: #04AA6D; /* Bakrunn på knapp*/
-  border: 2px solid black; /* kant rundt knapp */
+  border: 1px solid black; /* kant rundt knapp */
   font-family: sans-serif; 
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
   color: white; /* farge på tekst i knapp, men ble blå av link??? */
-  padding: 30px 24px; /* padding */
+  padding: 0px 0px; /* padding */
   cursor: pointer; /* mus blir til en hånd */
   float: center; /* knapper ved siden av hverandre */
 }
@@ -26,7 +26,6 @@
   text-decoration: none;
 }
 
-/* Clear floats */
 .btn-group:after {
   content: "";
   clear: both;
@@ -37,3 +36,38 @@
 .btn-group button:hover {
   background-color: #c0c0ba;
 }
+
+
+<!--TEST-->
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #f8f8f2;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+
+<!--transparency-->
+
