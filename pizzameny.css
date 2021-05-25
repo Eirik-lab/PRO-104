@@ -22,6 +22,7 @@ body{
     color: #04AA6D;
     font-family:'Satisfy', sans-serif;
     font-weight: 300;
+    transform: translate(40%,40%);
 }
 
 .header-2{
@@ -50,13 +51,12 @@ body{
 }
 
 
-
-
 .pizzameny-resturant{
-    width: 70%;
-    float:top left;
+    width: 50%;
+    float: left top;
     padding: 15px;
     position: relative;
+    transform: translate(50%,50%);
 }
 
 .pizzameny-resturant .menu-title{
@@ -97,10 +97,11 @@ float:top left;
 
 
 .drinkmeny-resturant{
-    width: 70%;
+    width: 50%;
     float:left middle;
     padding: 15px;
     position: relative;
+    transform: translate(50%,50%);
 }
 
 .drinkmeny-resturant .menu-title{
@@ -135,10 +136,11 @@ float:left middle;
 
 
 .extras-resturant{
-    width: 70%;
+    width: 50%;
     float:left bottom;
     padding: 15px;
     position: relative;
+    transform: translate(50%,50%);
 }
 
 .extras-resturant .menu-title{
