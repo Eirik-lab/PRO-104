@@ -181,9 +181,9 @@ Dette er en test
     <form class="modal-content animate" action="">
 
         <div class="container">
-  <label for="email">Email:</label>
+  <label for="email">E-post:</label>
   <input type="email" id="email" name="email"><br>
-  <label for="pwd">Password:</label>
+  <label for="pwd">Passord:</label>
   <input type="password" id="pwd" name="pwd" minlength="8"><br>
   <label for="firstName">Fornavn</label>
   <input type="text"><br>
@@ -194,7 +194,9 @@ Dette er en test
   <label for="tlf">Telefonnummer</label>
   <input type="tel"><br>
   <label for="workPlace">Arbeidsplass</label>
-  <input type="text"><br>
+  <input type="text" id="workPlace"><br>
+  <lavel for="wage">Timelønn</lavel>
+  <input type="number" id="wage"><br>
   <label for="percentagePosition">Prosentstilling</label>
   <select name="Prosentstilling" id="percentagePostion">
     <option value="30">30%</option>
@@ -204,6 +206,20 @@ Dette er en test
   </select><br>
   <label for="adress">Adresse</label>
   <input type="text"><br>
+  <label for="restaurants">Restauranter</label>
+  <select name="Restauranter" id="restaurants">
+    <option value="oslo">Oslo</option>
+    <option value="hadeland">Hadeland</option>
+    <option value="bergen">Bergen</option>
+    <option value="moss">Moss</option>
+  </select><br>
+  <label for="bankAccount">Kontonummer</label>
+  <input type="number"><br>
+  <label for="contract">Kontrakt</label>
+  <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel"/><br>
+  <label></label>
+  <label for="personalNumber">Fødselsnummer</label>
+  <input type="password" id="personalNumber"><br><!--muligens bytt fra password til number eller text-->
   <input type="submit" value="Godkjenn">
         </div>
 

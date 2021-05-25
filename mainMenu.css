@@ -26,6 +26,14 @@
     left: 7%;
 }
 
+#logg-ut-btn {
+  background-color: #f44336;
+}
+
+.button {
+  background-color: #04AA6D;
+}
+
 .columns {
     width: 140%;
     height: 100%;
@@ -72,4 +80,13 @@
 
   .button {
     background-color: aqua;
+  }
+
+  #ansatt-info {
+    height: 278px;
+  }
+
+  #ansatt-info-dato {
+    position: absolute;
+    bottom: 50px;
   }
