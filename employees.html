@@ -1,184 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-
     <head>
-
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="script" type="javascript" href="script.js" />
     </head>
 
 <body>
+
+<!--START NAVBAR-->
+
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="mainMenu.html">
+            <a class="navbar-item" href="mainMenu.html">
             <img src="images/Gyldne_pizza1.png" width="120" height="28">
-          </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-          </a>
+            </a>
         </div>
-      
+        
         <div id="navbar" class="navbar-menu">
-          <div class="navbar-start">
+            <div class="navbar-start">
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
-                  Mer
+                    Mer
                 </a>
         
                 <div class="navbar-dropdown">
-                  <a class="navbar-item" href="employees.html">
+                    <a class="navbar-item" href="employees.html">
                     Ansatte 
-                  </a>
+                    </a>
 
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="restaurants.html">
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="restaurants.html">
                     Restauranter
-                  </a>
-                  <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
+                    </a>
+                    <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
                     Oslo
-                  </a>
-                  <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
+                    </a>
+                    <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
                     Bergen
-                  </a>
-                  <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
+                    </a>
+                    <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
                     Moss
-                  </a>
-                  <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
+                    </a>
+                    <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
                     Hadeland
-                  </a>
+                    </a>
 
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="pizzameny.html">
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="pizzameny.html">
                     Pizzameny
-                  </a>
+                    </a>
 
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="accounting.html">
+                    <hr class="navbar-divider">
+                    <a class="navbar-item" href="accounting.html">
                     Regnskap
-                  </a>
+                    </a>
                 </div>
             </div>
-      
+        
             
-          </div>
-      
-          <div class="navbar-end">
+            </div>
+        
+            <div class="navbar-end">
             <a class="navbar-item" href="employees.html">
                 Ansatte
-              </a>
-  
-              <a class="navbar-item" href="restaurants.html">
-                  Restauranter
                 </a>
-  
+
+                <a class="navbar-item" href="restaurants.html">
+                    Restauranter
+                </a>
+
                 <a class="navbar-item" href="pizzameny.html">
-                  Pizzameny
+                    Pizzameny
                 </a>
-  
+
                 <a class="navbar-item" href="accounting.html">
-                  Regnskap
+                    Regnskap
                 </a>
-            
-          </div>
+            </div>
         </div>
-      </nav>
+        <div class="navbar-item">
+            <div class="buttons">
+            <a id="logg-ut-btn" class="button is-danger" href="login.html">
+                <strong>Logg ut</strong>
+            </a>
+            </div>
+        </div>
+    </nav>
+    
+<!--END NAVBAR-->
+
+<!--START SIDEBAR-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    * {
-      box-sizing: border-box;
-    }
     
-    #myInput {
-      background-color:#ddd;
-      background-position: 10px 12px;
-      background-repeat: no-repeat;
-      width: 25%;
-      font-size: 16px;
-      padding: 12px 20px 12px 40px;
-      border: 1px solid #ddd;
-      margin-bottom: 12px;
-    }
-    
-    #myUL {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-    
-    #myUL li a {
-      border: 1px solid #ddd;
-      width: 25%;
-      margin-top: -1px; /* Prevent double borders */
-      background-color: #f6f6f6;
-      padding: 12px;
-      text-decoration: none;
-      font-size: 12px;
-      color: black;
-      display: block
-    }
-    
-    #myUL li a:hover:not(.header) {
-      background-color: #eee;
-    }
-    .employees-list {
-        background-color: red;
-        position:absolute;
-        width: 75%;
-        left: 25%;
-        top:0%;
-    }
-    h2{
-        text-size: 20px;
+    <!--START SERCHFIELD-->
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk etter ansatte.." title="Skriv et navn">
+    <!--END SEARCHFIELD-->
+    <!--START EMPLOYEELIST-->
+        <ul id="myUL">
+            <li><a href="oliverlovlien.html">Oliver Løvlien</a></li>
+            <li><a href="#">Ollibolly Løvlien</a></li>
 
-    }
-    </style>
+            <li><a href="#">Oliver Columbus</a></li>
+            <li><a href="#">Oliver Conya</a></li>
 
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk etter ansatte.." title="Skriv et navn">
+            <li><a href="#">Oliver Farmer</a></li>
+            <li><a href="#">Oliver Bonde</a></li>
+            <li><a href="#">Oliver Choudhary</a></li>
+        </ul>
+    <!--END EMPLOYEELIST-->
+    <!--START DISPLAYDIV-->
+    <div class="employees-list">
+        <div id="id01" class="modal">
 
-<ul id="myUL">
-  <li><a href="oliverlovlien.html">Oliver Løvlien</a></li>
-  <li><a href="#">Ollibolly Løvlien</a></li>
+            <form class="modal-content animate" action="">
+        
+                <div class="container">
+          <label for="email">E-post:</label>
+          <input type="email" id="email" name="email"><br>
+          <label for="pwd">Passord:</label>
+          <input type="password" id="pwd" name="pwd" minlength="8"><br>
+          <label for="firstName">Fornavn</label>
+          <input type="text"><br>
+          <label for="lastName">Etternavn</label>
+          <input type="text"><br>
+          <label for="employerID">Ansattnummer</label>
+          <input type="number"><br>
+          <label for="tlf">Telefonnummer</label>
+          <input type="tel"><br>
+          <label for="workPlace">Arbeidsplass</label>
+          <input type="text" id="workPlace"><br>
+          <lavel for="wage">Timelønn</lavel>
+          <input type="number" id="wage"><br>
+          <label for="percentagePosition">Prosentstilling</label>
+          <select name="Prosentstilling" id="percentagePostion">
+            <option value="30">30%</option>
+            <option value="50">50%</option>
+            <option value="80">80%</option>
+            <option value="100">100%</option>
+          </select><br>
+          <label for="adress">Adresse</label>
+          <input type="text"><br>
+          <label for="restaurants">Restauranter</label>
+          <select name="Restauranter" id="restaurants">
+            <option value="oslo">Oslo</option>
+            <option value="hadeland">Hadeland</option>
+            <option value="bergen">Bergen</option>
+            <option value="moss">Moss</option>
+          </select><br>
+          <label for="bankAccount">Kontonummer</label>
+          <input type="number"><br>
+          <label for="contract">Kontrakt</label>
+          <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel"/><br>
+          <label></label>
+          <label for="personalNumber">Fødselsnummer</label>
+          <input type="password" id="personalNumber"><br><!--muligens bytt fra password til number eller text-->
+          <input type="submit" value="Godkjenn">
+                </div>
+        
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
+                </div>
+            </form>
+        </div>
+        <button class="title-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Legg til ansatt</button>
+        
 
-  <li><a href="#">Oliver Columbus</a></li>
-  <li><a href="#">Oliver Conya</a></li>
-
-  <li><a href="#">Oliver Farmer</a></li>
-  <li><a href="#">Oliver Bonde</a></li>
-  <li><a href="#">Oliver Choudhary</a></li>
-</ul>
-
-<script>
-function myFunction() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
-</script>
-<div class="employees-list">
-
-Dette er en test
-</div>
+    Dette er en test
+    </div>
+    <!--END DISPLAYDIV-->
     
 </body>
-
-<style>
-
-</style>
 
 </html>
