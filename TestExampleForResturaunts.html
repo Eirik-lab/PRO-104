@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <link rel="stylesheet" type="text/css"
+    href="restaurants.css" /> 
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauranter</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+
+</head>
+<body>
+
+
+    <!--START NAVBAR-->
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="mainMenu.html">
+                <img src="images/Gyldne_pizza1.png" width="120" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                  Mer
+                </a>
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="employees.html">
+                    Ansatte 
+                  </a>
+
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="restaurants.html">
+                    Restauranter
+                  </a>
+                        <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
+                    Oslo
+                  </a>
+                        <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
+                    Bergen
+                  </a>
+                        <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
+                    Moss
+                  </a>
+                        <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
+                    Hadeland
+                  </a>
+
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="pizzameny.html">
+                    Pizzameny
+                  </a>
+
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="accounting.html">
+                    Regnskap
+                  </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="navbar-end">
+                <a class="navbar-item" href="employees.html">
+                Ansatte
+              </a>
+
+                <a class="navbar-item" href="restaurants.html">
+                  Restauranter
+                </a>
+
+                <a class="navbar-item" href="pizzameny.html">
+                  Pizzameny
+                </a>
+
+                <a class="navbar-item" href="accounting.html">
+                  Regnskap
+                </a>
+
+            </div>
+        </div>
+    </nav>
+    <br>
+ <!--END NAVBAR-->
+
+    <h1 class="header">
+    <span>Restauranter</span> 
+    </h1>
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <!--BUTTONS-->
+<!--
+    <div class="btn-group" style="width:100%">
+
+        <button style="width:20%"><a href="oslo.html">Oslo <img src="images/Oslo.jpeg" alt="Oslo" style="width:200%"></button></a>
+        <button style="width:20%"><a href="bergen.html">Bergen</button></a>
+        <button style="width:20%"><a href="moss.html">Moss</button></a>
+        <button style="width:20%"><a href="hadeland.html">Hadeland</button></a>
+    </div>-->
+    <a class="imgDivOrSomething" href="oslo.html">
+        <img src="images/Oslo.jpeg" class="osloImage"> 
+        <div class="osloTxt">Oslo</div>
+    </a>
+<style>
+
+.osloImage{
+    width: 20%;
+}
+
+.osloTxt {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 250%;
+  color: cyan;
+  }
+</style>
+    
+
+
+</body>
+</html>
