@@ -160,10 +160,10 @@
                 <input type="text"><br>
                 <label for="restaurants">Restauranter</label>
                 <select name="Restauranter" id="restaurants">
-                    <option value="Oslo">Oslo</option>
-                    <option value="Hadeland">Hadeland</option>
-                    <option value="Bergen">Bergen</option>
-                    <option value="Moss">Moss</option>
+                    <option value="oslo">Oslo</option>
+                    <option value="hadeland">Hadeland</option>
+                    <option value="bergen">Bergen</option>
+                    <option value="moss">Moss</option>
                 </select><br>
                 <label for="bankAccount">Kontonummer</label>
                 <input type="number"><br>
@@ -172,16 +172,33 @@
                 <label></label>
                 <label for="personalNumber">Fødselsnummer</label>
                 <input type="password" id="personalNumber"><br><!--muligens bytt fra password til number eller text-->
-                <input type="submit" value="Godkjenn">
+                <!--<input type="submit" value="Godkjenn" class="title-btn" class="button">-->
+                <button type="submit">Godkjenn</button>
+    
+    
             </div>
     
             <div class="container" style="background-color:#f1f1f1">
                 <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
             </div>
+        
         </form>
     </div>
+    
     <button class="title-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Legg til ansatt</button>
-  
+    
+    <script>
+        function addLi(){
+            var firstName =document.getElementById('firstName'),value,
+            listNode = document.getElementById('myUl'),
+            liNode = document.createElement('Li'),
+            txtNode = document.createTextNode('firstName');
+
+        liNode.appendChild(txtNode);
+        listNode.appendChild(liNode);
+            
+        }
+    </script>
 </body>
 
 </html>
