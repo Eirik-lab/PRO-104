@@ -78,15 +78,11 @@
     overflow-y: scroll;
   }
 
-  .button {
-    background-color: aqua;
-  }
-
   #ansatt-info {
     height: 278px;
   }
 
-  #ansatt-info-dato {
-    position: absolute;
-    bottom: 50px;
+  .footer {
+    position: relative;
+    bottom: -100px;
   }
