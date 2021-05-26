@@ -1,3 +1,7 @@
-#bergen {
-    left: 50%;
-}
+#table1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
