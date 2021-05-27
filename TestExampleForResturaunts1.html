@@ -120,30 +120,46 @@
 
     <div class="row">
 
+    <div class="column">
     <a class="imgDivOrSomething" href="oslo.html">
         <img src="images/Oslo.jpeg" class="osloImage"> 
-        <div class="osloTxt">Oslo</a></div>
-    </a>
+        <div class="osloTxt">Oslo</div></a></div>
 
-    <a class="imgDivOrSomething" href="bergen.html">
+    <div class="column">
+        <a class="imgDivOrSomething" href="bergen.html">
         <img src="images/bergen2.jpeg" class="bergenImage">
         <div class="bergenTxt">Bergen</div>
-    </a>
+    </a></div>
 
+    <div class="column">
     <a class="imgDivOrSomething" href="moss.html">
       <img src="images/Moss.jpeg" class="mossImage">
       <div class="mossTxt">Moss</div>
-  </a>
+  </a></div>
 
+  <div class="column">
   <a class="imgDivOrSomething" href="hadeland.html">
     <img src="images/Hadeland.jpeg" class="hadelandImage">
     <div class="hadelandTxt">Hadeland</div>
-</a>
+</a></div>
 
 </div>
 
 
 <style>
+
+.column {
+  float: left;
+  width: 10%;
+  padding: 0px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
 .osloImage{
     width: 20%;
