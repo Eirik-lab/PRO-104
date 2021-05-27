@@ -16,3 +16,27 @@
   background: url('http://www.kodhus.com/freecourse-images/header-image.jpg');
   background-size: cover;
   }
+
+  .info-Bergen{
+    font-size: 15px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+  }
+
+  .opening-hours-Bergen{
+    font-size: 15px;
+    color: #636363;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+  }
+
+  .header-opening-Bergen{
+    font-size: 15px;
+    color: #04AA6D;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+  }
