@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bergen</title>
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Restauranter</title>
-    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
-    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <link rel="stylesheet" href="../css/cards.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="avdelinger.css">
+</head>
 
-  </head>
+<!--START NAVBAR-->
 
-  <body>
-
- <!--START NAVBAR-->
-
- <nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="mainMenu.html">
         <img src="images/Gyldne_pizza1.png" width="120" height="28">
@@ -104,55 +97,33 @@
   </nav>
 
     <!--END NAVBAR-->
-    <div class="row">
-    <div class="column">
-    <div class="container" id="Oslo">
-      <div class="section">
-        <div id="app" class="row columns is-multiline">
-          <div v-for="card in cardData" key="card.id" class="column is-4">
-            <div class="card large">
-              <div class="card-image">
-                <figure class="image is-16by9">
-                  <img src="images/Oslo.jpeg" alt="Image">
-                </figure>
-              </div>
-              <div class="Resturaunt">
-                <div class="media">
-                  <div class="resturaunt-Oslo">
-                    <a class="title is-4 no-padding" href="oslo.html">Oslo</a><br>
-                    <p class="subtitle is-6">Daglig leder:</p>
-                    <a href="employees.html">Oliver Løvlien</a>
-                </div>
-            </div>
-                </div>
-              </div>
-            </div>
-          </div>
+
+
+
+ <!---about-Bergen--->
+ <body>
+        <img src="images/bergen.jpeg" class="header-img-Bergen">
+        <div class="info-Bergen">
+            Adresse: <br>
+            Telefonnummer: <br>
+            Antall ansatte:<br>
+            <br></p>
         </div>
-    </div>
-    <div class="container" id="Bergen">
-        <div class="section">
-          <div id="app" class="row columns is-multiline">
-            <div v-for="card in cardData" key="card.id" class="column is-4">
-              <div class="card large">
-                <div class="card-image">
-                  <figure class="image is-16by9">
-                    <img src="images/bergen2.jpeg" alt="Bergen">
-                  </figure>
-                </div>
-                    <div class="resturaunt-Oslo">
-                      <a class="title is-4 no-padding" href="oslo.html">Bergen</a><br>
-                      <p class="subtitle is-6">Daglig leder:</p>
-                      <a href="employees.html">Oliver Løvlien</a>
-                  </div>
-              </div>
-                  </div>
-              </div>
+            <div class="opening-hours-Bergen">
+            <h2 class="header-opening-Bergen"> Åpningstider:<br> </h2>
+            mandag	10–22<br>
+            tirsdag	10–22<br>
+            onsdag	10–22<br>
+            torsdag	10–22<br>
+            fredag	10–23<br>
+            lørdag	10–23<br>
+            søndag	10–22<br>
             </div>
-          </div>
-        </div>
-    </div>
- <!--START FOOTER-->
+
+  <!---end about-Bergen--->
+
+
+   <!--START FOOTER-->
 
  <footer class="footer">
     <div id="footer-div" class="content has-text-centered">
@@ -163,37 +134,6 @@
   </footer>
 
   <!--END FOOTER-->
-
-    <script src="../js/cardsData.js"></script>
-
-    <!-- Using Vue to populate cards to reduce redundant code -->
-    <script>
-      var app = new Vue({
-        el: '#app',
-        data: {
-          cardData: cardsData
-        }
-      })
-
-    </script>
-    <style>
-        .Oslo{}
-        
-        .Bergen{
-        }
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-    </style>
-</body>
-
+    
+ </body>
 </html>
