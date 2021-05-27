@@ -10,6 +10,7 @@ body{
 .section-padding{
     padding:60px 0px;
 }
+ 
 
 .gyldne-meny{
     margin-bottom:
@@ -21,6 +22,7 @@ body{
     color: #04AA6D;
     font-family:'Satisfy', sans-serif;
     font-weight: 300;
+    transform: translate(40%,40%);
 }
 
 .header-2{
@@ -31,37 +33,20 @@ body{
     text-transform:uppercase;
 }
 
-
-.header-3{
-    font-size: 20px;
-    color: #04AA6D;
-    font-family:'Satisfy', sans-serif;
-    font-weight: 100;
-    text-transform:uppercase;
-}
-
-.header-4{
-    font-size: 20px;
-    color: #04AA6D;
-    font-family:'Satisfy', sans-serif;
-    font-weight: 100;
-    text-transform:uppercase;
-}
-
-
 .pizzameny-resturant{
     width: 50%;
-    float:left;
+    float: left top;
     padding: 15px;
     position: relative;
+    transform: translate(50%,50%);
 }
 
 .pizzameny-resturant .menu-title{
-float:left;
+float:top left;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color:#FFB03B;
+    color:#e6952c;
 }
 .pizzameny-resturant .menu-line{
     position: absolute;
@@ -80,7 +65,7 @@ float:left;
 
 .pizzameny-resturant .menu-subtitle{
     display: block;
-    float: left;
+    float: top left;
     color: #B1B1B1;
     font-size: 1.2rem;
 }
@@ -95,17 +80,18 @@ float:left;
 
 .drinkmeny-resturant{
     width: 50%;
-    float:left;
+    float:left middle;
     padding: 15px;
     position: relative;
+    transform: translate(50%,50%);
 }
 
 .drinkmeny-resturant .menu-title{
-float:left;
+float:left middle;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #FFB03B;
+    color: #e6952c;
 }
 
 .drinkmeny-resturant .menu-line{
@@ -129,19 +115,22 @@ float:left;
 }
 
 
+
+
 .extras-resturant{
     width: 50%;
-    float:left;
+    float:left bottom;
     padding: 15px;
     position: relative;
+    transform: translate(50%,50%);
 }
 
 .extras-resturant .menu-title{
-float:left;
+float:left bottom;
     font-family: Monserrat, arial;
     text-transform:uppercase;
     letter-spacing: 1px;
-    color: #FFB03B;
+    color: #e6952c;
 }
 
 .extras-resturant .menu-line{
