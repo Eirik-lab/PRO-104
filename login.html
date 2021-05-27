@@ -3,6 +3,9 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -153,13 +156,13 @@
 
             <div class="container">
                 <label for="uname"><b>Ansattnummer</b></label>
-                <input type="text" placeholder="Skriv inn Ansattnummer" name="uname" required>
+                <input type="text" class="input is-medium is-rounded" placeholder="Skriv inn Ansattnummer" name="uname" required>
 
                 <label for="psw"><b>Passord</b></label>
-                <input type="password" placeholder="Skriv inn Passord" name="psw" required>
+                <input type="password" class="input is-medium is-rounded" placeholder="Skriv inn Passord" name="psw" required>
 
                 <!--<button id="checkInputBtn" type="submit" onclick="myFunction">Login</button>-->
-                <button id="checkInputBtn" onclick="checkInput">Login</button>
+                <button id="checkInputBtn" class="button is-primary is-rounded is-hovered"  onclick="checkInput">Login</button>
 
                 <label>
         <input type="checkbox" checked="checked" name="remember"> Husk meg
