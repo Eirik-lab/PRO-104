@@ -9,89 +9,95 @@
 </head>
 <body>
 
-
-    <!--START NAVBAR-->
+      <!--START NAVBAR-->
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-          <a class="navbar-item" href="mainMenu.html">
-            <img src="images/Gyldne_pizza1.png" width="112" height="28">
-          </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
-        </div>
-      
-        <div id="navbar" class="navbar-menu">
-          <div class="navbar-start">
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
-                  Mer
-                </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item" href="employees.html">
-                    Ansatte 
-                  </a>
-
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="restaurants.html">
-                    Restauranter
-                  </a>
-                  <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
-                    Oslo
-                  </a>
-                  <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
-                    Bergen
-                  </a>
-                  <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
-                    Moss
-                  </a>
-                  <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
-                    Hadeland
-                  </a>
-
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="pizzameny.html">
-                    Pizzameny
-                  </a>
-
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="accounting.html">
-                    Regnskap
-                  </a>
-                </div>
-            </div>
-      
-            
-          </div>
-      
-          <div class="navbar-end">
-            <a class="navbar-item" href="employees.html">
-                Ansatte
+      <div class="navbar-brand">
+        <a class="navbar-item" href="mainMenu.html">
+          <img src="images/Gyldne_pizza1.png" width="120" height="28">
+        </a>
+    
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    
+      <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+          <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                Mer
               </a>
-  
-              <a class="navbar-item" href="restaurants.html">
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="employees.html">
+                  Ansatte 
+                </a>
+
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="restaurants.html">
                   Restauranter
                 </a>
-  
+                <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
+                  Oslo
+                </a>
+                <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
+                  Bergen
+                </a>
+                <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
+                  Moss
+                </a>
+                <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
+                  Hadeland
+                </a>
+
+                <hr class="navbar-divider">
                 <a class="navbar-item" href="pizzameny.html">
                   Pizzameny
                 </a>
-  
-                <a class="navbar-item" href="accounting.html">
+
+                <hr class="navbar-divider">
+                <a class="navbar-item" href="http://127.0.0.1:5501/accountingAllrestaurants.html">
                   Regnskap
                 </a>
-            
+              </div>
           </div>
-        </div>
-      </nav>
-
-        <!--END NAVBAR-->
     
+          
+        </div>
+    
+        <div class="navbar-end">
+          <a class="navbar-item" href="employees.html">
+              Ansatte
+            </a>
+
+            <a class="navbar-item" href="restaurants.html">
+                Restauranter
+              </a>
+
+              <a class="navbar-item" href="pizzameny.html">
+                Pizzameny
+              </a>
+
+              <a class="navbar-item" href="http://127.0.0.1:5501/accountingAllrestaurants.html">
+                Regnskap
+              </a>
+        </div>
+      </div>
+      <div class="navbar-item">
+        <div class="buttons">
+          <a id="logg-ut-btn" class="button is-danger" href="login.html">
+            <strong>Logg ut</strong>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+      <!--END NAVBAR-->
+
+        <!--Start Statistics bar-->
 
     <div class="container">
 
@@ -101,7 +107,7 @@
 
                 <article class="column">
                     <div class="has-background-primary-dark has-text-white p-3">
-                        <h2>Kunder idag</h2>
+                        <h2>Kunder idag på alle våre restauranter</h2>
                     </div>
                 </article>
 
@@ -115,13 +121,13 @@
 
                 <article class="column">
                     <div class="has-background-primary-dark has-text-white p-3">
-                        <h3>Antall ordre</h3>
+                        <h3>Antall ordre på alle våre restauranter</h3>
                     </div>
                 </article>
 
                 <article class="column">
                     <div class="has-background-primary-dark has-text-white p-3">
-                        <h3>Totalt antall ansatte</h3>
+                        <h3>Totalt antall ansatte på alle våre restauranter</h3>
                     </div>
                 </article>
 
@@ -154,7 +160,8 @@
                   </div>
               </div>
           </section>
-          <!--- End first row -->
+          <!--- End statistics bar -->
+
           <!---Start restaurant section-->
             <div id="table1" class="columns">
                 <div class="column is-6">
@@ -172,28 +179,28 @@
                                         <tr>
                                             <td width="1%"><i class="fa fa-bell-o"></i></td>
                                             <td>Alle Restauranter</td>
-                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/restaurants.html">Velg</a></td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/accountingAllrestaurants.html">Velg</a></td>
                                         </tr>
 
                                         <tr>
                                             <td width="1%"><i class="fa fa-bell-o"></i></td>
                                             <td>Moss</td>
-                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/moss.html">Velg</a></td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/accounting.moss.html">Velg</a></td>
                                         </tr>
                                         <tr>
                                             <td width="1%"><i class="fa fa-bell-o"></i></td>
                                             <td>Oslo</td>
-                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/oslo.html">Velg</a></td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/accounting.oslo.html">Velg</a></td>
                                         </tr>
                                         <tr>
                                             <td width="1%"><i class="fa fa-bell-o"></i></td>
                                             <td>Bergen</td>
-                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/bergen.html">Velg</a></td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/accounting.bergen.html">Velg</a></td>
                                         </tr>
                                         <tr>
                                             <td width="1%"><i class="fa fa-bell-o"></i></td>
                                             <td>Hadeland</td>
-                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/hadeland.html">Velg</a></td>
+                                            <td class="level-right"><a class="button is-small is-primary" href="http://127.0.0.1:5501/accounting.hadeland.html">Velg</a></td>
                                         </tr>
                                         
                                     </tbody>
@@ -209,11 +216,6 @@
 
 
     </div>
-
-        
-
-
-
 
     
 </body>
