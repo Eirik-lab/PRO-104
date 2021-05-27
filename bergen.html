@@ -4,10 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bergen</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="avdelinger.css">
 </head>
-<body>
+
+<!--START NAVBAR-->
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="mainMenu.html">
+        <img src="images/Gyldne_pizza1.png" width="120" height="28">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="navbar" class="navbar-menu">
+      <div class="navbar-start">
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Mer
+            </a>
     
-<h1>Gyldne Pizza Bergen</h1>
+            <div class="navbar-dropdown">
+              <a class="navbar-item" href="employees.html">
+                Ansatte 
+              </a>
+
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="restaurants.html">
+                Restauranter
+              </a>
+              <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
+                Oslo
+              </a>
+              <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
+                Bergen
+              </a>
+              <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
+                Moss
+              </a>
+              <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
+                Hadeland
+              </a>
+
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="pizzameny.html">
+                Pizzameny
+              </a>
+
+              <hr class="navbar-divider">
+              <a class="navbar-item" href="http://127.0.0.1:5501/accountingAllrestaurants.html">
+                Regnskap
+              </a>
+            </div>
+        </div>
+  
+        
+      </div>
+  
+      <div class="navbar-end">
+        <a class="navbar-item" href="employees.html">
+            Ansatte
+          </a>
+
+          <a class="navbar-item" href="restaurants.html">
+              Restauranter
+            </a>
+
+            <a class="navbar-item" href="pizzameny.html">
+              Pizzameny
+            </a>
+
+            <a class="navbar-item" href="http://127.0.0.1:5501/accountingAllrestaurants.html">
+              Regnskap
+            </a>
+      </div>
+    </div>
+    <div class="navbar-item">
+      <div class="buttons">
+        <a id="logg-ut-btn" class="button is-danger" href="login.html">
+          <strong>Logg ut</strong>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+    <!--END NAVBAR-->
+
+
+
+ <!--about-Bergen = åpningstider, antall ansatte, adresse-->
+ <body>
+   <div class="about-Bergen-section">
+      <h1 style="text-align:center"> Den Gyldne Pizza - Bergen</h2>
+   </div>
+   <div class="row">
+   <div class="column">
+    <div class="card">
+       <img src="" alt="opening-hours" style="width:40%">
+      <div class="container">
+        <p class="info">
+            Adresse: <br>
+            Telefonnummer: <br>
+            Antall ansatte:<br>
+            <br>
+            Åpningstider:<br>
+            mandag	10–22<br>
+            tirsdag	10–22<br>
+            onsdag	10–22<br>
+            torsdag	10–22<br>
+            fredag	10–23<br>
+            lørdag	10–23<br>
+            søndag	10–22<br>
+        </p>
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+
+  <!---end about-Bergen-->
+
+
+   <!--START FOOTER-->
+
+ <footer class="footer">
+    <div id="footer-div" class="content has-text-centered">
+      <p>
+        <strong>Gyldne pizza's</strong> source code fount at <a href="https://github.com/Eirik-lab/PRO-104"target="_blank">@eirik/github</a>.
+      </p>
+    </div>
+  </footer>
+
+  <!--END FOOTER-->
     
-</body>
+ </body>
 </html>
