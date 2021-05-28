@@ -4,4 +4,17 @@
     align-items: center;
     justify-content: center;
   
+  }.footer {
+    position: relative;
+    bottom: -300px;
+
+
+  }#stats{
+    width: 42px; 
+   height: 42px;
+
+
   }
+
+
+  
