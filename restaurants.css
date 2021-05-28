@@ -10,13 +10,13 @@
 }
 
 .btn-group button {
-  background-color: #04AA6D; /* Bakrunn på knapp*/
+  background-color: #e7ebe9; /* Bakrunn på knapp*/
   border: 1px solid black; /* kant rundt knapp */
   font-family: sans-serif; 
   font-weight: 300;
   font-size: 20px;
   color: white; /* farge på tekst i knapp, men ble blå av link??? */
-  padding: 0px 0px; /* padding */
+  padding: 10px 10px; /* padding */
   cursor: pointer; /* mus blir til en hånd */
   float: center; /* knapper ved siden av hverandre */
 }
