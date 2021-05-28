@@ -43,3 +43,34 @@
   }
 
 /* End Bergen CSS*/
+
+/* Start Hadeland CSS*/
+
+.header-img-Hadeland{
+  width: 100%;
+  height: 400px;
+  }
+
+  .info-Hadeland{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(42%,42%);
+    float: middle;
+    position: relative;
+  }
+
+  .opening-hours-Hadeland{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(45%,45%);
+    float: middle;
+    position: relative;
+  }
+
+/* End Hadeland CSS*/
