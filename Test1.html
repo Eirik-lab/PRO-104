@@ -104,16 +104,20 @@
   </nav>
 
     <!--END NAVBAR-->
+    <div class="container">
+    <div class="section">
     <div class="row">
     <div class="column">
+    <div class="row column is-multiline">
     <div class="container" id="Oslo">
       <div class="section">
         <div id="app" class="row columns is-multiline">
+            <!--    Oslo    -->
           <div v-for="card in cardData" key="card.id" class="column is-4">
             <div class="card large">
               <div class="card-image">
                 <figure class="image is-16by9">
-                  <img src="images/Oslo.jpeg" alt="Image">
+                  <img src="images/Oslo.jpeg" alt="Oslo">
                 </figure>
               </div>
               <div class="Resturaunt">
@@ -127,31 +131,71 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-    </div>
-    <div class="container" id="Bergen">
-        <div class="section">
-          <div id="app" class="row columns is-multiline">
+            <!--  Bergen  -->
             <div v-for="card in cardData" key="card.id" class="column is-4">
-              <div class="card large">
-                <div class="card-image">
-                  <figure class="image is-16by9">
-                    <img src="images/bergen2.jpeg" alt="Bergen">
-                  </figure>
+                <div class="card large">
+                  <div class="card-image">
+                    <figure class="image is-16by9">
+                      <img src="images/bergen2.jpeg" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="Resturaunt">
+                    <div class="media">
+                      <div class="resturaunt-Oslo">
+                        <a class="title is-4 no-padding" href="bergen.html">Bergen</a><br>
+                        <p class="subtitle is-6">Daglig leder:</p>
+                        <a href="employees.html">Oliver Columbus</a>
+                    </div>
                 </div>
-                    <div class="resturaunt-Oslo">
-                      <a class="title is-4 no-padding" href="oslo.html">Bergen</a><br>
-                      <p class="subtitle is-6">Daglig leder:</p>
-                      <a href="employees.html">Oliver Løvlien</a>
+                    </div>
                   </div>
-              </div>
-                  </div>
-              </div>
-            </div>
+                </div>
+                <!--    Moss    -->
+                <div v-for="card in cardData" key="card.id" class="column is-4">
+                    <div class="card large">
+                      <div class="card-image">
+                        <figure class="image is-16by9">
+                          <img src="images/Moss.jpeg" alt="Moss">
+                        </figure>
+                      </div>
+                      <div class="Resturaunt">
+                        <div class="media">
+                          <div class="resturaunt-Oslo">
+                            <a class="title is-4 no-padding" href="moss.html">Moss</a><br>
+                            <p class="subtitle is-6">Daglig leder:</p>
+                            <a href="employees.html">Oliver Farmer</a>
+                        </div>
+                    </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--  Hadeland    -->
+                    <div v-for="card in cardData" key="card.id" class="column is-4">
+                        <div class="card large">
+                          <div class="card-image">
+                            <figure class="image is-16by9">
+                              <img src="images/Hadeland.jpeg" alt="Hadeland">
+                            </figure>
+                          </div>
+                          <div class="Resturaunt">
+                            <div class="media">
+                              <div class="resturaunt-Oslo">
+                                <a class="title is-4 no-padding" href="hadeland.html">Hadeland</a><br>
+                                <p class="subtitle is-6">Daglig leder:</p>
+                                <a href="employees.html">Oliver Bonde</a>
+                            </div>
+                        </div>
+                            </div>
+                          </div>
+                        </div>
           </div>
         </div>
     </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
  <!--START FOOTER-->
 
  <footer class="footer">
@@ -181,18 +225,7 @@
         
         .Bergen{
         }
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
 
-/* Clearfix (clear floats) */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
     </style>
 </body>
 
