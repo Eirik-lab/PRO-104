@@ -14,8 +14,9 @@
 
 
   }#stats{
-    width: 400px; 
-   height: 42px;
+    max-width: 75%;
+    max-height: 75%;
+    display: block;
 
 
   }
