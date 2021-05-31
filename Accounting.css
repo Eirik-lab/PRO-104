@@ -1,7 +1,53 @@
+
+/*
 #table1{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+*/
+
   
+  .footer {
+    position: relative;
+    bottom: -300px;
+
+
+  }#stats{
+    max-width: 75%;
+    max-height: 75%;
+    display: block;
   }
+
+  .navbar {
+    height: 70px;
+}
+
+#navbar-child-1{
+    opacity: 90%;
+    font-size: 13px;
+    left: 7%;
+}
+
+#navbar-child-2{
+    opacity: 90%;
+    font-size: 13px;
+    left: 7%;
+}
+
+#navbar-child-3{
+    opacity: 90%;
+    font-size: 13px;
+    left: 7%;
+}
+
+#navbar-child-4{
+    opacity: 90%;
+    font-size: 13px;
+    left: 7%;
+}
+
+#logg-ut-btn {
+  background-color: #f44336;
+}
+  

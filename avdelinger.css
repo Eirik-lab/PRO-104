@@ -1,0 +1,138 @@
+.header {
+    color: #070706;
+    text-align: left;
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+    width: 40%;
+    transition: 1s;
+  }
+
+/* CSS Bergen*/
+  .header-img-Bergen{
+  width: 100%;
+  height: 400px;
+  }
+
+  .info-Bergen{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(42%,42%);
+    float: middle;
+    position: relative;
+  }
+
+  .opening-hours-Bergen{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(45%,45%);
+    float: middle;
+    position: relative;
+  }
+
+  .footer-Bergen {
+    position: relative;
+    bottom: -98px;
+  }
+
+/* End Bergen CSS*/
+
+/* Start Hadeland CSS*/
+
+.header-img-Hadeland{
+  width: 100%;
+  height: 400px;
+  }
+
+  .info-Hadeland{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(42%,42%);
+    float: middle;
+    position: relative;
+  }
+
+  .opening-hours-Hadeland{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(45%,45%);
+    float: middle;
+    position: relative;
+  }
+
+/* End Hadeland CSS*/
+
+/* Start Oslo CSS*/
+
+.header-img-Oslo{
+  width: 100%;
+  height: 400px;
+  }
+
+  .info-Oslo{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(42%,42%);
+    float: middle;
+    position: relative;
+  }
+
+  .opening-hours-Oslo{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(45%,45%);
+    float: middle;
+    position: relative;
+  }
+
+/* End Oslo CSS*/
+
+/* Start Moss CSS*/
+
+.header-img-Moss{
+  width: 100%;
+  height: 400px;
+  }
+
+  .info-Moss{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(42%,42%);
+    float: middle;
+    position: relative;
+  }
+
+  .opening-hours-Moss{
+    font-size: 15px;
+    color: #000000;
+    font-family:'Satisfy', sans-serif;
+    font-weight: 100;
+    text-transform:uppercase;
+    transform: translate(45%,45%);
+    float: middle;
+    position: relative;
+  }
+
+/* End Moss CSS*/
