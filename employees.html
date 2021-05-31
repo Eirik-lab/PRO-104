@@ -4,201 +4,352 @@
     <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <link rel="script" type="javascript" href="script.js" />
-        <link rel="stylesheet" type="text/css" href="mainMenu.css" />
-
-
+        <link rel="stylesheet" href="style.css"/>
+        <script type="text/javascript" src="script.js"></script>
     </head>
 
 <body>
-
-<!--START NAVBAR-->
-
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" href="mainMenu.html">
+          <a class="navbar-item" href="mainMenu.html">
             <img src="images/Gyldne_pizza1.png" width="120" height="28">
-            </a>
-        
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
-            </a>
+          </a>
         </div>
-        
+      
         <div id="navbar" class="navbar-menu">
-            <div class="navbar-start">
+          <div class="navbar-start">
             <div class="navbar-item has-dropdown is-hoverable">
                 <a class="navbar-link">
-                    Mer
+                  Mer
                 </a>
         
                 <div class="navbar-dropdown">
-                    <a class="navbar-item" href="employees.html">
+                  <a class="navbar-item" href="employees.html">
                     Ansatte 
-                    </a>
+                  </a>
 
-                    <hr class="navbar-divider">
-                    <a class="navbar-item" href="restaurants.html">
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="restaurants.html">
                     Restauranter
-                    </a>
-                    <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
+                  </a>
+                  <a id="navbar-child-1" class="navbar-item" href="restaurant-oslo.html">
                     Oslo
-                    </a>
-                    <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
+                  </a>
+                  <a id="navbar-child-2" class="navbar-item" href="restaurant-bergen.html">
                     Bergen
-                    </a>
-                    <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
+                  </a>
+                  <a id="navbar-child-3" class="navbar-item" href="restaurant-moss.html">
                     Moss
-                    </a>
-                    <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
+                  </a>
+                  <a id="navbar-child-4" class="navbar-item" href="restaurant-hadeland.html">
                     Hadeland
-                    </a>
+                  </a>
 
-                    <hr class="navbar-divider">
-                    <a class="navbar-item" href="pizzameny.html">
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="pizzameny.html">
                     Pizzameny
-                    </a>
+                  </a>
 
-                    <hr class="navbar-divider">
-                    <a class="navbar-item" href="accounting.html">
+                  <hr class="navbar-divider">
+                  <a class="navbar-item" href="accounting.html">
                     Regnskap
-                    </a>
+                  </a>
                 </div>
             </div>
-        
+      
             
-            </div>
-        
-            <div class="navbar-end">
+          </div>
+      
+          <div class="navbar-end">
             <a class="navbar-item" href="employees.html">
                 Ansatte
+              </a>
+  
+              <a class="navbar-item" href="restaurants.html">
+                  Restauranter
                 </a>
-
-                <a class="navbar-item" href="restaurants.html">
-                    Restauranter
-                </a>
-
+  
                 <a class="navbar-item" href="pizzameny.html">
-                    Pizzameny
+                  Pizzameny
                 </a>
-
+  
                 <a class="navbar-item" href="accounting.html">
-                    Regnskap
+                  Regnskap
                 </a>
-            </div>
+          </div>
         </div>
         <div class="navbar-item">
-            <div class="buttons">
+          <div class="buttons">
             <a id="logg-ut-btn" class="button is-danger" href="login.html">
-                <strong>Logg ut</strong>
+              <strong>Logg ut</strong>
             </a>
-            </div>
+          </div>
         </div>
     </nav>
-    
-<!--END NAVBAR-->
-
-<!--START SIDEBAR-->
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!--START SERCHFIELD-->
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk etter ansatte.." title="Skriv et navn">
-    <!--END SEARCHFIELD-->
-    <!--START EMPLOYEELIST-->
-        <ul id="myUL">
-            <li><a href="oliverlovlien.html">Oliver Løvlien</a></li>
-            <li><a href="#">Ollibolly Løvlien</a></li>
 
-            <li><a href="#">Oliver Columbus</a></li>
-            <li><a href="#">Oliver Conya</a></li>
+    <ul id="myUL">
+        <li type="button" id="oliverL" onclick="oliverL()"><a href="#">Oliver Løvlien</a></li>
+        <li><a href="#">Ollibolly Løvlien</a></li>
+        <li><a href="#">Oliver Columbus</a></li>
+        <li><a href="#">Oliver Conya</a></li>
+        <li><a href="#">Oliver Farmer</a></li>
+        <li><a href="#">Oliver Bonde</a></li>
+        <li><a href="#">Oliver Choudhary</a></li>
+    </ul>
 
-            <li><a href="#">Oliver Farmer</a></li>
-            <li><a href="#">Oliver Bonde</a></li>
-            <li><a href="#">Oliver Choudhary</a></li>
-        </ul>
-    <!--END EMPLOYEELIST-->
-    <!--START DISPLAYDIV-->
-    <div class="employees-list">
+    <div id="displayEmployeeDiv">
         
-
-    Dette er en test
     </div>
-    <!--END DISPLAYDIV-->
-    <div id="id01" class="modal">
 
+    
+
+  
+    <div id="id01" class="modal">
         <form class="modal-content animate" action="">
-    
             <div class="container">
-                <label for="email">E-post:</label>
-                <input type="email" id="email" name="email"><br>
-                <label for="pwd">Passord:</label>
-                <input type="password" id="pwd" name="pwd" minlength="8"><br>
-                <label for="firstName">Fornavn</label>
-                <input type="text"><br>
-                <label for="lastName">Etternavn</label>
-                <input type="text"><br>
-                <label for="employerID">Ansattnummer</label>
-                <input type="number"><br>
-                <label for="tlf">Telefonnummer</label>
-                <input type="tel"><br>
-                <label for="workPlace">Arbeidsplass</label>
-                <input type="text" id="workPlace"><br>
-                <lavel for="wage">Timelønn</lavel>
-                <input type="number" id="wage"><br>
-                <label for="percentagePosition">Prosentstilling</label>
-                <select name="Prosentstilling" id="percentagePostion">
-                    <option value="30">30%</option>
-                    <option value="50">50%</option>
-                    <option value="80">80%</option>
-                    <option value="100">100%</option>
-                </select><br>
-                <label for="adress">Adresse</label>
-                <input type="text"><br>
-                <label for="restaurants">Restauranter</label>
-                <select name="Restauranter" id="restaurants">
-                    <option value="oslo">Oslo</option>
-                    <option value="hadeland">Hadeland</option>
-                    <option value="bergen">Bergen</option>
-                    <option value="moss">Moss</option>
-                </select><br>
-                <label for="bankAccount">Kontonummer</label>
-                <input type="number"><br>
-                <label for="contract">Kontrakt</label>
-                <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel"/><br>
-                <label></label>
-                <label for="personalNumber">Fødselsnummer</label>
-                <input type="password" id="personalNumber"><br><!--muligens bytt fra password til number eller text-->
-                <!--<input type="submit" value="Godkjenn" class="title-btn" class="button">-->
-                <button type="submit">Godkjenn</button>
-    
-    
-            </div>
-    
-            <div class="container" style="background-color:#f1f1f1">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Avbryt</button>
-            </div>
-        
+                <Div>
+                    <label for="fullName">Fornavn og Etternavn</label>
+                    <input type="text" id="fullName" placeholder="Fullt navn" required>
+                </Div>
+                <Div>
+                    <label for="email">E-post:</label>
+                    <input type="email" id="email" name="email" required> 
+                </Div>
+                <Div>
+                    <label for="pwd">Passord:</label>
+                    <input type="password" id="pwd" name="pwd" minlength="3" required> 
+                </Div>
+                <Div>
+                    <label for="telNbr">Telefonnummer</label>
+                    <input type="tel" id="telNbr" name="telNbr"> 
+                </Div>
+                <Div>
+                    <label for="hourlyWage">Timelønn</label>
+                    <input type="number" id="hourlyWage" name="hourlyWage">
+                </Div>
+                <Div>
+                    <label for="percentagePosition">Prosentstilling</label>
+                    <input type="number"  id="percentagePosition" name="percentagePosition"> 
+                </Div>
+                <Div>
+                    <label for="restaurants">Restauranter</label>
+                    <select name="restaurants" id="restaurants">
+                        <option value="oslo">Oslo</option>
+                        <option value="hadeland">Hadeland</option>
+                        <option value="bergen">Bergen</option>
+                        <option value="moss">Moss</option>
+                    </select>
+                </Div>
+<!--            <Div>
+                    <label for="upload">Kontrakt</label>
+                    <input type="file" name="upload" accept="application/pdf,application/vnd.ms-excel"/>  
+                </Div>
+-->  
+                <Div>
+                    <label for="personalNumber">Fødselsnummer</label>
+                    <input type="password" id="personalNumber"><!--muligens bytt fra password til number eller text-->  
+                </Div>
+                <button  id="addBtn" >
+                    Godkjenn
+                </button>
+            </div>                
         </form>
     </div>
-    
-    <button class="title-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Legg til ansatt</button>
-    
-    <script>
-        function addLi(){
-            var firstName =document.getElementById('firstName'),value,
-            listNode = document.getElementById('myUl'),
-            liNode = document.createElement('Li'),
-            txtNode = document.createTextNode('firstName');
+    <button class="title-btn" onclick="document.getElementById('id01').classList.toggle('is-active')" style="width:auto;">
+        Legg til ansatt
+    </button>
+    <button class="delete-btn" onclick="document.getElementById('id01').classList.toggle('is-active')" style="width:auto;">
+        Slett ansatt
+    </button>
+    <button class="edit-btn" onclick="document.getElementById('id01').classList.toggle('is-active')" style="width:auto;">
+        Rediger ansatt
+    </button>
 
-        liNode.appendChild(txtNode);
-        listNode.appendChild(liNode);
-            
+<script>
+    
+    
+let employees = [];
+    // example {employeeId: 0001, fullName: "Oliver Løvlien", email: "oliverlovlien@gp.no",...}
+const addemployee = (ev)=>{
+    ev.preventDefault();  //to stop the form submitting
+    let employee = [
+    {
+        employeeId: 0001,
+        fullName: "Oliver Løvlien",
+        email: "oliverlovlien@gp.no",
+        pwd: 0001,
+        telNbr: 90050001,
+        hourlyWage: 350,
+        percentagePositions: 100,
+        restaurants: "Oslo",
+//        upload: "",
+        personalNumber: 00000000001
+    },
+    {
+        employeeId: 0002,
+        fullName: "Ollibolly Løvlien",
+        email: "ollibollylovlien@gp.no",
+        pwd: 0002,
+        telNbr: 90050002,
+        hourlyWage: 173,
+        percentagePositions: 50,
+        restaurants: "Oslo",
+//        upload: "",
+        personalNumber: 00000000002
+    },
+    {
+        employeeId: 0003,
+        fullName: "Oliver Columbus",
+        email: "olc@gp.no",
+        pwd: 0003,
+        telNbr: 90050003,
+        hourlyWage: 350,
+        percentagePositions: 100,
+        restaurants: "Moss",
+//        upload: "",
+        personalNumber: 00000000003
+    },
+    {
+        employeeId: 0004,
+        fullName: "Oliver Conya",
+        email: "oc@gp.no",
+        pwd: 0004,
+        telNbr: 90050004,
+        hourlyWage: 350,
+        percentagePositions: 100,
+        restaurants: "Hadeland",
+//        upload: "",
+        personalNumber: 00000000004
+    },
+    {
+        employeeId: 000,
+        fullName: "Oliver Farmer",
+        email: "of@gp.no",
+        pwd: 0005,
+        telNbr: 90050005,
+        hourlyWage: 173,
+        percentagePositions: 50,
+        restaurants: "Hadeland",
+//        upload: "",
+        personalNumber: 00000000005
+    },
+    {
+        employeeId: 0006,
+        fullName: "Oliver Bonde",
+        email: "ob@gp.no",
+        pwd: 0006,
+        telNbr: 90050006,
+        hourlyWage: 350,
+        percentagePositions: 100,
+        restaurants: "Bergen",
+//        upload: "",
+        personalNumber: 00000000006
+    },
+    {
+        employeeId: 0007,
+        fullName: "Oliver Choudhary",
+        email: "oliverchoudhary@gp.no",
+        pwd: 0007,
+        telNbr: 90050007,
+        hourlyWage: 150,
+        percentagePositions: 50,
+        restaurants: "Bergen",
+//        upload: "",
+        personalNumber: 00000000007
+    },
+    {
+        employeeId: Date.now(),
+        fullName: document.getElementById('fullName').value,
+        email: document.getElementById('email').value,
+        pwd: document.getElementById('pwd').value,
+        telNbr: document.getElementById('telNbr').value,
+        hourlyWage: document.getElementById('hourlyWage').value,
+        percentagePositions: document.getElementById('percentagePosition').value,
+        restaurants: document.getElementById('restaurants').value,
+        upload: "",
+        personalNumber: document.getElementById('personalNumber').value
+    }
+    ];
+    employees.push(employee);
+//    document.forms[0].reset(); // to clear the form for the next entries
+    
+        window.location.href = "employees.html";
+    //for display purposes only
+    console.warn('added' , {employees} );
+    let pre = document.querySelector('#msg pre');
+    pre.textContent = '\n' + JSON.stringify(employees, '\t', 2);
+
+    //saving to localStorage
+    localStorage.setItem('GoldenPizzaEmployeeList', JSON.stringify(employees) );
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+    document.getElementById('addBtn').addEventListener('click',  addLi);
+});
+
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
         }
-    </script>
+    }
+}
+function addLi(ev){
+    ev.preventDefault();
+    document.getElementById("id01").classList.toggle("is-active");
+
+
+    let fullName = document.querySelector('#fullName');
+    let list = document.querySelector('#myUL'); 
+    
+    let item = document.createElement('li'); // create li node
+    let itemText = document.createElement('a'); // create text node
+    
+    itemText.innerHTML = fullName.value;
+    itemText.setAttribute("href", "firstName.value");
+
+    item.appendChild(itemText); // append text node to li node
+    list.appendChild(item); // append li node to list
+    
+ 
+}
+oliverL.onclick = buttonPressed;
+function buttonPressed(){
+    let displayEmployeeDiv = document.getElementById("displayEmployeeDiv");
+    for(let i = 0; i < employees.length; i++){
+            displayEmployeeDiv.innerHTML += `
+                
+                <h3>Navn: + ${employees[i].fullName}</h3>
+                <p>e-post: + ${employees[i].email}</p>
+                <p>Mobil: + ${employees[i].telNbr}</p>
+                <hr>
+                <br><br><br>`
+}
+
+
+
+
+
+</script>
+
 </body>
+
+
 
 </html>
