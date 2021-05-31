@@ -5,139 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-        .title-txt {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            box-sizing: border-box;
-        }
-        
-        button {
-            background-color: #04AA6D;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-        }
-        
-        button:hover {
-            opacity: 0.8;
-        }
-        
-        .cancelbtn {
-            width: auto;
-            padding: 10px 18px;
-            background-color: #f44336;
-        }
-        
-        .imgcontainer {
-            text-align: center;
-            margin: 12px 0 6px 0;
-            position: relative;
-        }
-        
-        .container {
-            padding: 16px;
-        }
-        
-        span.psw {
-            float: right;
-            padding-top: 16px;
-        }
-        
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.4);
-            padding-top: 60px;
-        }
-        
-        .modal-content {
-            background-color: #fefefe;
-            margin: 5% auto 15% auto;
-            border: 1px solid #888;
-            width: 60%;
-        }
-        
-        .close {
-            position: absolute;
-            right: 25px;
-            top: 0;
-            color: #000;
-            font-size: 35px;
-            font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: red;
-            cursor: pointer;
-        }
-        
-        .animate {
-            -webkit-animation: animatezoom 0.6s;
-            animation: animatezoom 0.6s
-        }
-        
-        @-webkit-keyframes animatezoom {
-            from {
-                -webkit-transform: scale(0)
-            }
-            to {
-                -webkit-transform: scale(1)
-            }
-        }
-        
-        @keyframes animatezoom {
-            from {
-                transform: scale(0)
-            }
-            to {
-                transform: scale(1)
-            }
-        }
-        
-        @media screen and (max-width: 300px) {
-            span.psw {
-                display: block;
-                float: none;
-            }
-            .cancelbtn {
-                width: 100%;
-            }
-        }
-        
-        .title-btn {
-            position: relative;
-            left: 50%;
-            transform: translate(-50%);
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    
 </head>
 
 <body>
@@ -165,8 +34,7 @@
                 <button id="checkInputBtn" class="button is-primary is-rounded is-hovered"  onclick="checkInput">Login</button>
 
                 <label>
-        <input type="checkbox" checked="checked" name="remember"> Husk meg
-      </label>
+        <input type="checkbox" checked="checked" name="remember"> Husk meg</label>
             </div>
 
             <div class="container" style="background-color:#f1f1f1">
@@ -175,52 +43,6 @@
             </div>
         </form>
     </div>
-
-    <script>
-	
-		/*
-			HTML objects
-		*/
-		var password1Txt = document.getElementById("psw");
-		var password2Txt = document.getElementById("password2-txt");
-		
-		var checkInputBtn = document.getElementById("check-input-btn");
-		var outputDiv = document.getElementById("output-div");
-		
-		/*
-			Variables
-		*/
-		var psw = "123";
-		var password2 = "456";
-		
-		var passwordUser1 = "";
-		var passwordUser2 = "";
-		
-		/*
-			Functions
-		*/
-		function checkInput(){
-			
-			passwordUser1 = psw.value;
-			passwordUser2 = password2Txt.value;
-			
-			if( passwordUser1 === psw){
-				outputDiv.innerHTML = `
-					<h3>Gratulerer! Dere er rike!</h3>
-					<img src="images/treasure-hunters.jpg">
-				`;
-			}else{
-				outputDiv.innerHTML = "Dere tastet inn feil kode og hvelvet vil være låst for evig tid!";
-			}
-		}
-		
-		/*
-			Events
-		*/
-		checkInputBtn.onclick = checkInput;
-		
-		
-	</script>
 
 </body>
 
