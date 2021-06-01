@@ -2,6 +2,8 @@
 
 x
 
+Login.html = index filen
+
 Formateringstandard/ kodestandard brukt:
 
     "javascript": {
