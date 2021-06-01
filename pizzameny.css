@@ -1,154 +1,147 @@
-body{
-    font-size:15px;
+body {
+    font-size: 15px;
     line-height: 1.52;
-     color: #717f86;
-     font-family: 'open', sans-serif;
-     font-weight: 400;
-     overflow-x: hidden;
+    color: #717f86;
+    font-family: 'open', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
 }
 
-.section-padding{
-    padding:60px 0px;
-}
- 
-
-.gyldne-meny{
-    margin-bottom:
-    35px;
+.section-padding {
+    padding: 60px 0px;
 }
 
-.header-1{
+.gyldne-meny {
+    margin-bottom: 35px;
+}
+
+.header-1 {
     font-size: 35px;
     color: #04AA6D;
-    font-family:'Satisfy', sans-serif;
+    font-family: 'Satisfy', sans-serif;
     font-weight: 300;
-    transform: translate(40%,40%);
+    transform: translate(40%, 40%);
 }
 
-.header-2{
+.header-2 {
     font-size: 20px;
     color: #04AA6D;
-    font-family:'Satisfy', sans-serif;
+    font-family: 'Satisfy', sans-serif;
     font-weight: 100;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.pizzameny-resturant{
+.pizzameny-resturant {
     width: 50%;
     float: left top;
     padding: 15px;
     position: relative;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
 }
 
-.pizzameny-resturant .menu-title{
-float:top left;
+.pizzameny-resturant .menu-title {
+    float: top left;
     font-family: Monserrat, arial;
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 1px;
-    color:#e6952c;
+    color: #e6952c;
 }
-.pizzameny-resturant .menu-line{
+
+.pizzameny-resturant .menu-line {
     position: absolute;
     bottom: 6px;
-    border-bottom: 1px dotted rgba(0,0,0,.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, .3);
     margin-left: .6rem;
     margin-right: .6rem;
 }
 
-.pizzameny-resturant .menu-price{
+.pizzameny-resturant .menu-price {
     font-weight: 600;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.pizzameny-resturant .menu-subtitle{
+.pizzameny-resturant .menu-subtitle {
     display: block;
     float: top left;
     color: #B1B1B1;
     font-size: 1.2rem;
 }
 
-.pizzameny-resturant span.clearfix{
+.pizzameny-resturant span.clearfix {
     position: relative;
     display: block;
 }
 
-
-
-
-.drinkmeny-resturant{
+.drinkmeny-resturant {
     width: 50%;
-    float:left middle;
+    float: left middle;
     padding: 15px;
     position: relative;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
 }
 
-.drinkmeny-resturant .menu-title{
-float:left middle;
+.drinkmeny-resturant .menu-title {
+    float: left middle;
     font-family: Monserrat, arial;
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: #e6952c;
 }
 
-.drinkmeny-resturant .menu-line{
+.drinkmeny-resturant .menu-line {
     position: absolute;
     bottom: 6px;
-    border-bottom: 1px dotted rgba(0,0,0,.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, .3);
     margin-left: .6rem;
     margin-right: .6rem;
 }
 
-.drinkmeny-resturant .menu-price{
+.drinkmeny-resturant .menu-price {
     font-weight: 600;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.drinkmeny-resturant span.clearfix{
+.drinkmeny-resturant span.clearfix {
     position: relative;
     display: block;
 }
 
-
-
-
-.extras-resturant{
+.extras-resturant {
     width: 50%;
-    float:left bottom;
+    float: left bottom;
     padding: 15px;
     position: relative;
-    transform: translate(50%,50%);
+    transform: translate(50%, 50%);
 }
 
-.extras-resturant .menu-title{
-float:left bottom;
+.extras-resturant .menu-title {
+    float: left bottom;
     font-family: Monserrat, arial;
-    text-transform:uppercase;
+    text-transform: uppercase;
     letter-spacing: 1px;
     color: #e6952c;
 }
 
-.extras-resturant .menu-line{
+.extras-resturant .menu-line {
     position: absolute;
     bottom: 6px;
-    border-bottom: 1px dotted rgba(0,0,0,.3);
+    border-bottom: 1px dotted rgba(0, 0, 0, .3);
     margin-left: .6rem;
     margin-right: .6rem;
 }
 
-.extras-resturant .menu-price{
+.extras-resturant .menu-price {
     font-weight: 600;
     position: absolute;
     right: 0;
     top: 0;
 }
 
-.extras-resturant span.clearfix{
+.extras-resturant span.clearfix {
     position: relative;
     display: block;
 }

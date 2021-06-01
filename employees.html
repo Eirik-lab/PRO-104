@@ -1,102 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-        <link rel="stylesheet" href="employees.css"/>
-        <script type="text/javascript" src="employees.js"></script>
-        <link rel="stylesheet" type="text/css" href="mainMenu.css">
-    </head>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="employees.css" />
+    <script type="text/javascript" src="employees.js"></script>
+    <link rel="stylesheet" type="text/css" href="mainMenu.css">
+</head>
 
 <body>
-     <!--START NAVBAR-->
+    <!--START NAVBAR-->
 
-     <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item" href="mainMenu.html">
-            <img src="images/Gyldne_pizza1.png" width="120" height="28">
-          </a>
-      
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+            <a class="navbar-item" href="mainMenu.html">
+                <img src="images/Gyldne_pizza1.png" width="120" height="28">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
-      
+
         <div id="navbar" class="navbar-menu">
-          <div class="navbar-start">
-            <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link">
+            <div class="navbar-start">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
                   Mer
                 </a>
-        
-                <div class="navbar-dropdown">
-                  <a class="navbar-item" href="employees.html">
+
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="employees.html">
                     Ansatte 
                   </a>
 
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="restaurants.html">
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="restaurants.html">
                     Restauranter
                   </a>
-                  <a id="navbar-child-1" class="navbar-item" href="oslo.html">
+                        <a id="navbar-child-1" class="navbar-item" href="oslo.html">
                     Oslo
                   </a>
-                  <a id="navbar-child-2" class="navbar-item" href="bergen.html">
+                        <a id="navbar-child-2" class="navbar-item" href="bergen.html">
                     Bergen
                   </a>
-                  <a id="navbar-child-3" class="navbar-item" href="moss.html">
+                        <a id="navbar-child-3" class="navbar-item" href="moss.html">
                     Moss
                   </a>
-                  <a id="navbar-child-4" class="navbar-item" href="hadeland.html">
+                        <a id="navbar-child-4" class="navbar-item" href="hadeland.html">
                     Hadeland
                   </a>
 
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="pizzameny.html">
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="pizzameny.html">
                     Pizzameny
                   </a>
 
-                  <hr class="navbar-divider">
-                  <a class="navbar-item" href="accountingAllrestaurants.html">
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="accountingAllrestaurants.html">
                     Regnskap
                   </a>
+                    </div>
                 </div>
+
+
             </div>
-      
-            
-          </div>
-      
-          <div class="navbar-end">
-            <a class="navbar-item" href="employees.html">
+
+            <div class="navbar-end">
+                <a class="navbar-item" href="employees.html">
                 Ansatte
               </a>
-  
-              <a class="navbar-item" href="restaurants.html">
+
+                <a class="navbar-item" href="restaurants.html">
                   Restauranter
                 </a>
-  
+
                 <a class="navbar-item" href="pizzameny.html">
                   Pizzameny
                 </a>
-  
+
                 <a class="navbar-item" href="http://127.0.0.1:5501/accountingAllrestaurants.html">
                   Regnskap
                 </a>
-          </div>
+            </div>
         </div>
         <div class="navbar-item">
-          <div class="buttons">
-            <a id="logg-ut-btn" class="button is-danger" href="login.html">
-              <strong>Logg ut</strong>
-            </a>
-          </div>
+            <div class="buttons">
+                <a id="logg-ut-btn" class="button is-danger" href="login.html">
+                    <strong>Logg ut</strong>
+                </a>
+            </div>
         </div>
-      </nav>
+    </nav>
 
-        <!--END NAVBAR-->
+    <!--END NAVBAR-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Søk etter ansatte.." title="Skriv et navn">
@@ -113,17 +113,17 @@
 
     <div id="displayEmployeeDiv" class="card-content">
         <div class="media">
-            <div class="media-left">    
+            <div class="media-left">
             </div>
-              <div class="media-content">
-                
-              </div>
+            <div class="media-content">
+
+            </div>
         </div>
     </div>
 
-    
 
-  
+
+
     <div id="id01" class="modal">
         <form class="modal-content animate" action="">
             <div class="container">
@@ -133,15 +133,15 @@
                 </Div>
                 <Div>
                     <label for="email">E-post:</label>
-                    <input type="email" id="email" name="email" required> 
+                    <input type="email" id="email" name="email" required>
                 </Div>
                 <Div>
                     <label for="pwd">Passord:</label>
-                    <input type="password" id="pwd" name="pwd" minlength="3" required> 
+                    <input type="password" id="pwd" name="pwd" minlength="3" required>
                 </Div>
                 <Div>
                     <label for="telNbr">Telefonnummer</label>
-                    <input type="tel" id="telNbr" name="telNbr"> 
+                    <input type="tel" id="telNbr" name="telNbr">
                 </Div>
                 <Div>
                     <label for="hourlyWage">Timelønn</label>
@@ -149,7 +149,7 @@
                 </Div>
                 <Div>
                     <label for="percentagePosition">Prosentstilling</label>
-                    <input type="number"  id="percentagePosition" name="percentagePosition"> 
+                    <input type="number" id="percentagePosition" name="percentagePosition">
                 </Div>
                 <Div>
                     <label for="restaurants">Restauranter</label>
@@ -163,12 +163,13 @@
 
                 <Div>
                     <label for="personalNumber">Fødselsnummer</label>
-                    <input type="password" id="personalNumber"><!--muligens bytt fra password til number eller text-->  
+                    <input type="password" id="personalNumber">
+                    <!--muligens bytt fra password til number eller text-->
                 </Div>
-                <button  id="addBtn" >
+                <button id="addBtn">
                     Godkjenn
                 </button>
-            </div>                
+            </div>
         </form>
     </div>
     <button class="title-btn" onclick="document.getElementById('id01').classList.toggle('is-active')" style="width:auto;">
@@ -177,21 +178,21 @@
     <button class="edit-btn" style="width:auto;">
         Rediger ansatt
     </button>
-    <button class="delete-btn" >
+    <button class="delete-btn">
         Slett ansatt
     </button>
 
-              <!--START FOOTER-->
+    <!--START FOOTER-->
 
-              <footer class="footer">
-                <div id="footer-div" class="content has-text-centered">
-                  <p>
-                    <strong>Gyldne pizza's</strong> source code found at <a href="https://github.com/Eirik-lab/PRO-104"target="_blank">@eirik/github</a>.
-                  </p>
-                </div>
-              </footer>
-    
-              <!--END FOOTER-->
+    <footer class="footer">
+        <div id="footer-div" class="content has-text-centered">
+            <p>
+                <strong>Gyldne pizza's</strong> source code found at <a href="https://github.com/Eirik-lab/PRO-104" target="_blank">@eirik/github</a>.
+            </p>
+        </div>
+    </footer>
+
+    <!--END FOOTER-->
 </body>
 
 
