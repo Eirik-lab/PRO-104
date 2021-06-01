@@ -2,9 +2,9 @@
 
 x
 
-Login.html = index filen
+Login.html = the index file
 
-Formateringstandard/ kodestandard brukt:
+Formatting/ Coding Standard Used:
 
     "javascript": {
         "indent_size": 4,
